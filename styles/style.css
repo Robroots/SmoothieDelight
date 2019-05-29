@@ -33,7 +33,7 @@ html {
     color: white;
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
-    padding: 0.5em;
+    padding: 20px;
     font-weight: bold;
     -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
@@ -61,7 +61,6 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-self: center;
 }
 
 .nav__list__item {
@@ -100,19 +99,17 @@ html {
     -webkit-filter: grayscale(0%);
 }
 
-.pages {
-    text-align: center;
-    padding: 50px 0;
+.home {
     position: relative;
 }
 
-.pages::after {
+.home::after {
     content: "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../images/antioxidant-4023745.jpg");
+    background-image: url("../images/half-home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,22 +118,43 @@ html {
     z-index: -1;
 }
 .home__box{
-    background: rgba(255, 255, 255, 0.438);
-    padding: 15px 0;
-    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    width: 45%;
 }
 .home__box__header{
+    display: inline-block;
     font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    border-bottom: 2px solid white;
+    padding: 15px 0;
 }
 .home__box__article{
-    padding: 20px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
 }
+.home__box__article__subheader{
+    font-size: 1.8rem;
+}
+.home__box__article__text{
+    font-size: 1.3rem;
+    padding: 15px 0;
+    line-height: 1.3em
+}
+.home__box__article__product-name{
+    font-size: 2.5rem;
+    font-family: 'Carter One', cursive;
+    color: rgba(255, 255, 255, 0.685);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+}
+
 .footer {
     background: black;
     color: white;
     padding: 30px 10px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
+    background: rgb(0, 0, 0, 0.8);
+    /* background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%); */
 }
