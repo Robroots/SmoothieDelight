@@ -12,10 +12,17 @@ class Menu extends Component {
         {name: "Your vote counts!", link: "/query" },
         {name: "Newsletter", link: "/newsletter"}
     ]
+
+    handleMouseEvent = (e) => {
+        e.target.classList.toggle("unblur");
+    }
+
     render() {
         let jsxNavItems = this.navItems.map(item => 
             <NavLink
-                key={item.link} 
+                key={item.link}
+                onMouseEnter={this.handleMouseEvent}
+                onMouseLeave={this.handleMouseEvent} 
                 className="nav__list__item" 
                 activeClassName="nav__list__item--active" 
                 exact to={item.link}>{item.name}
