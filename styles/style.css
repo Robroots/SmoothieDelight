@@ -33,7 +33,7 @@ html {
     color: white;
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
-    padding: 20px;
+    padding: 15px 50px;
     font-weight: bold;
     -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
@@ -49,7 +49,7 @@ html {
 
 .nav {
     height: 8em;
-    padding: 10px 0;
+    padding: 10px 50px;
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -60,7 +60,7 @@ html {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav__list__item {
@@ -77,9 +77,9 @@ html {
     height: 6.5rem;
     width: 6.5rem;
     background: url("../images/smoothie.jpg");
-    background-size: 200%;
-    background-position-x: 55%;
-    background-position-y: 39%;
+    background-size: 106%;
+    background-position-x: 38%;
+    background-position-y: 50%;
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 9px #000000;
@@ -117,38 +117,76 @@ html {
     height: 100%;
     z-index: -1;
 }
-.home__box{
-    padding: 15px 20px;
+
+.box--left {
+    padding: 15px 50px;
     width: 45%;
+    font-size: 0.9rem;
 }
-.home__box__header{
+
+.box--right{
+    padding: 15px 50px;
+    width: 45%;
+    font-size: 0.9rem;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.box__article {
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.box__header {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: rgb(255, 255, 255);
     letter-spacing: 4px;
     border-bottom: 2px solid white;
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
-.home__box__article{
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    padding: 15px 0;
+
+
+.box__article__subheader {
+    font-size: 1.8em;
+    padding-top: 15px;
 }
-.home__box__article__subheader{
-    font-size: 1.8rem;
-}
-.home__box__article__text{
-    font-size: 1.3rem;
+
+.box__article__text {
+    font-size: 1.3em;
     padding: 15px 0;
     line-height: 1.3em
 }
-.home__box__article__product-name{
-    font-size: 2.5rem;
+
+.box__article__product-name {
+    font-size: 2.5em;
     font-family: 'Carter One', cursive;
     color: rgba(255, 255, 255, 0.685);
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding: 10px 0;
+}
+
+.muscle {
+    position: relative;
+    display: flex;
+}
+
+.muscle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/be-strong.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .footer {

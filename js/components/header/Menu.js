@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 
 import {NavLink} from 'react-router-dom'
-import Home from "../pages/Home";
 
 class Menu extends Component {
     state = {  }
     navItems = [
-        {name: "Home", link: "/home" },
+        {name: "Home", link: "/" },
         {name: "Be strong!", link: "/add-muscle" },
         {name: "Be healthy!", link: "/healthy-delicious" },
         {name: "Be fit!", link: "/lose-weight" },
@@ -19,7 +18,7 @@ class Menu extends Component {
                 key={item.link} 
                 className="nav__list__item" 
                 activeClassName="nav__list__item--active" 
-                to={item.link}>{item.name}
+                exact to={item.link}>{item.name}
             </NavLink>
         )
         return (

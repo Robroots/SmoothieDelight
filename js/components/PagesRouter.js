@@ -10,7 +10,7 @@ import Newsletter from './pages/Newsletter';
 
 const PagesRouter = () => (
     <section className="container pages">
-        <Route path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/add-muscle" component={AddMuscle} />
         <Route path="/healthy-delicious" component={HealthyDelicous} />
         <Route path="/lose-weight" component={LoseWeight} />
