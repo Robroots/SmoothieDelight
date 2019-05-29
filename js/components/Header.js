@@ -3,7 +3,7 @@ import Logo from './header/Logo';
 import Menu from './header/Menu';
 
 const Header = () => (
-    <header>
+    <header className="container header">
         <Logo />
         <Menu />
     </header>

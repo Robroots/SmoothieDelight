@@ -6,13 +6,32 @@ class Menu extends Component {
     state = {  }
     render() {
         return (
-            <nav>
-                <ul>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/add-muscle">Be strong!</NavLink>
-                    <NavLink to="/healthy-delicious">Be healthy!</NavLink>
-                    <NavLink to="/lose-weight">Be fit!</NavLink>
-                    <NavLink to="/query">Your vote counts!</NavLink>
+            <nav className="nav">
+                <ul className="nav__list">
+                    <NavLink 
+                        className="nav__list__item" 
+                        activeClassName="nav__list__item--active" 
+                        to="/home">Home</NavLink>
+                    <NavLink 
+                        className="nav__list__item" 
+                        activeClassName="nav__list__item--active" 
+                        to="/add-muscle">Be strong!
+                    </NavLink>
+                    <NavLink 
+                        className="nav__list__item" 
+                        activeClassName="nav__list__item--active" 
+                        to="/healthy-delicious">Be healthy!
+                    </NavLink>
+                    <NavLink 
+                        className="nav__list__item" 
+                        activeClassName="nav__list__item--active" 
+                        to="/lose-weight">Be fit!
+                    </NavLink>
+                    <NavLink 
+                        className="nav__list__item" 
+                        activeClassName="nav__list__item--active" 
+                        to="/query">Your vote counts!
+                    </NavLink>
                 </ul>
             </nav>
         );

@@ -8,13 +8,13 @@ import LoseWeight from './pages/LoseWeight';
 import Query from './pages/Query';
 
 const PagesRouter = () => (
-    <>
-        <Route exact path="/" component={Home} />
+    <section className="container pages">
+        <Route path="/home" component={Home} />
         <Route path="/add-muscle" component={AddMuscle} />
         <Route path="/healthy-delicious" component={HealthyDelicous} />
         <Route path="/lose-weight" component={LoseWeight} />
         <Route path="/query" component={Query} />
-    </>  
+    </section>  
 );
 
 export default PagesRouter;
