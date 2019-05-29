@@ -8,14 +8,18 @@ import LoseWeight from './pages/LoseWeight';
 import Query from './pages/Query';
 import Newsletter from './pages/Newsletter';
 
+import SwitchWithSlide from "./Slider/SwitchWithSlide";
+
 const PagesRouter = () => (
     <section className="container pages">
-        <Route exact path="/" component={Home} />
-        <Route path="/add-muscle" component={AddMuscle} />
-        <Route path="/healthy-delicious" component={HealthyDelicous} />
-        <Route path="/lose-weight" component={LoseWeight} />
-        <Route path="/query" component={Query} />
-        <Route path="/newsletter" component={Newsletter} />
+        <SwitchWithSlide>
+            <Route exact path="/" component={Home} />
+            <Route path="/add-muscle" component={AddMuscle} />
+            <Route path="/healthy-delicious" component={HealthyDelicous} />
+            <Route path="/lose-weight" component={LoseWeight} />
+            <Route path="/query" component={Query} />
+            <Route path="/newsletter" component={Newsletter} />
+        </SwitchWithSlide>
     </section>  
 );
 
