@@ -5,9 +5,9 @@ const AddMuscle = () => (
         <div className='box--right'>
             <h2 className='box__header'>Exercise with Smoothie Delight Sports</h2>
             <article className='box__article'>
-                <h2 className='box__article__subheader'>
+                <h3 className='box__article__subheader'>
                     Are you work out type of person? 
-                </h2>
+                </h3>
                 <p className='box__article__text'>
                     Food Factor has managed to create product that connects great taste and high standard supplement for atheltes:
                 </p>

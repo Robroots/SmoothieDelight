@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HealthyDelicous = () => (
-    <section>
+    <section className='healthy'>
         <h2>HealthyDelicous</h2>
     </section>
 );

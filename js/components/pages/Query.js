@@ -1,7 +1,7 @@
 import React from "react";
 
 const Query = () => (
-    <section>
+    <section className='query'>
         <h2>Query</h2>
     </section>
 );
