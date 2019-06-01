@@ -61,7 +61,6 @@ class Query extends Component {
         }
         return (
             <section className='query'>
-                <h1 className='query__header'>Thank you for your vote!</h1>:
                     <h1 className='query__header'>Be a part of Food Factor and decide</h1>
                     <p className='query__text'>Our company tries to keep up with customer's desires and that is why we kindly ask you for favor - take a minute of your time and decide which line of Smoothie Delight should we develop now:</p>
                     <ul className='query__list'>
