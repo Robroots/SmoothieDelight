@@ -12,8 +12,17 @@ class Query extends Component {
         })
     }
 
-    handleVoteBtn = () => {
+    handleVoteBtn = (e) => {
         this.props.didVote()
+        const data = e.target.value;
+        fetch('http://some-url-with-voting-DB/',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(resp => console.log(resp.json()))
     }
 
     newSmoothies = [
@@ -24,8 +33,7 @@ class Query extends Component {
     ]
 
     render() {
-        console.log(this.state.voted)
-        let jsxSmoothies = this.newSmoothies.map(smoothie => 
+        let jsxSmoothies = this.newSmoothies.map(( smoothie, i) => 
             <li key={smoothie.name} className='query__list__item'>
                 <div className='query__list__item__up-half'>
                     <span className='query__list__item__up-half__icon'>{smoothie.iconUni}</span>
@@ -33,7 +41,12 @@ class Query extends Component {
                 </div>
                 <div className='query__list__item__down-half'>
                     <p className='query__list__item__down-half__text'>{smoothie.desc}</p>
-                    <button onClick={this.handleVoteBtn} className={'query__list__item__down-half__btn'}>Vote!</button>
+                    <button 
+                        value={i} 
+                        name={smoothie.name} 
+                        onClick={this.handleVoteBtn} 
+                        className={'query__list__item__down-half__btn'}>Vote!
+                    </button>
                 </div>
 
 
@@ -48,16 +61,12 @@ class Query extends Component {
         }
         return (
             <section className='query'>
-                {this.state.voted?
                 <h1 className='query__header'>Thank you for your vote!</h1>:
-                <>
                     <h1 className='query__header'>Be a part of Food Factor and decide</h1>
                     <p className='query__text'>Our company tries to keep up with customer's desires and that is why we kindly ask you for favor - take a minute of your time and decide which line of Smoothie Delight should we develop now:</p>
                     <ul className='query__list'>
                         {jsxSmoothies}
                     </ul>
-                </>
-                }
             </section>
         );
     }
