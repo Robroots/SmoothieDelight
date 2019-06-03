@@ -19,8 +19,8 @@ class LoseWeight extends Component {
     handleResize = () => {
         if(innerWidth>1200){
             this.setState({
-                signSize: '64.5px',
-                boxSize: '16.8px'
+                signSize: '55.5px',
+                boxSize: '15.8px'
             })
         }else{
             this.setState({
@@ -32,7 +32,7 @@ class LoseWeight extends Component {
 
     componentDidMount() {
         // Prevent font to be bigger than image
-        innerWidth>1200 && this.setState({signSize:'64.5px', boxSize:'16.8px'});
+        innerWidth>1200 && this.setState({signSize:'55.5px', boxSize:'15.8px'});
         window.addEventListener('resize', this.handleResize)
     }
     componentWillUnmount() {
@@ -44,7 +44,7 @@ class LoseWeight extends Component {
             <section className='fit'>
                 <img 
                     className='fit__img' 
-                    src="../images/be-fit.jpg" 
+                    src="../images/be-fit2.jpg" 
                     alt='lorema-ipsumova-image' 
                     onLoad={this.imgOnLoad} 
                 />

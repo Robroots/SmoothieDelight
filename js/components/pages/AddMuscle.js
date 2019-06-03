@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddMuscle = () => (
-    <section className='muscle'>
+    <section className='muscle page'>
         <div className='box--right'>
             <h2 className='box__header'>Exercise with Smoothie Delight Sports</h2>
             <article className='box__article'>

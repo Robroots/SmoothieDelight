@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Home extends Component {
     render() {
         return (
-            <section className="home">
+            <section className="home page">
                 <div className='box--left'>
                     <article className='box__article'>
                         <h2 className='box__header'>Grab Smoothie Delight and enjoy!</h2>
