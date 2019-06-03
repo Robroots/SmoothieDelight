@@ -1,0 +1,56 @@
+.newsletter{
+    background: #485563; 
+    background: -webkit-linear-gradient(to right, #29323c, #485563); 
+    background: linear-gradient(to right, #29323c, #485563);
+    color: white;
+    text-align: center;
+    padding: 15px 50px;
+}
+.newsletter__form{
+    font-size: 1.8em;
+    width: 60%;
+    margin: 0 auto;
+}
+.newsletter__form__fieldset{
+    padding: 15px;
+    background: #ffffff10;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+}
+.newsletter__form__fieldset__input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.newsletter__form__fieldset__input-box__input{
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+}
+.newsletter__form__fieldset__input-box__submit{
+    width: 50%;
+    align-self: center;
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    background: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2em;
+    margin: 15px;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+}
+.newsletter__form__fieldset__input-box__label{
+    align-self: flex-start;
+    margin-bottom: 10px;
+}

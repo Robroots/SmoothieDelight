@@ -1,0 +1,96 @@
+html {
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+    background: url('../images/html-bg.jpg');
+    background-position: top;
+    background-size: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.6);
+}
+
+.page{
+    min-height: 38em;
+}
+.page__header{
+    color: white;
+    font-size: 2.2em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+.page__text{
+    padding: 15px 0;
+    font-size: 1.5em;
+    color: white;
+}
+.pages{
+    font-size: 0.9rem;
+}
+
+.box--left {
+    padding: 15px 50px;
+    width: 45%;
+    color: white;
+}
+
+.box--right{
+    padding: 15px 50px;
+    width: 45%;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    color: white;
+}
+
+.box--absolute{
+    padding: 15px 50px;
+    width:55%;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    font-size: 1.3vw;
+    color: black;
+}
+
+.box--center{
+    text-align: center;
+}
+
+.box__header {
+    display: inline-block;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    border-bottom: 2px solid;
+    padding-bottom: 15px;
+}
+.box__article__subheader {
+    font-size: 1.8em;
+    padding-top: 15px;
+}
+
+.box__article__text {
+    font-size: 1.3em;
+    padding: 15px 0;
+    line-height: 1.3em
+}
+.box__article__text--quote{
+    font-style: italic;
+    font-size: 1.3em;
+    padding: 15px 0;
+    line-height: 1.3em
+}
+
+.box__article__product-name {
+    font-size: 2.5em;
+    font-family: 'Carter One', cursive;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px 0;
+}

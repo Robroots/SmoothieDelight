@@ -31,7 +31,14 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader', 
-          'css-loader', 
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', 
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -39,24 +46,9 @@ module.exports = {
                 new require('autoprefixer')()
               ]
             }
-          }
-        ]
+          },
+          'sass-loader']
       },
-      // {
-      //   test: /\.scss$/,
-      //   use: [
-      //     'style-loader', 
-      //     'css-loader',
-      //     {
-      //       loader: 'postcss-loader',
-      //       options: {
-      //         plugins: () => [
-      //           new require('autoprefixer')()
-      //         ]
-      //       }
-      //     },
-      //     'sass-loader']
-      // },
       {
         test: /\.(jpg|jpeg|gif|png|csv)$/,
         use: {

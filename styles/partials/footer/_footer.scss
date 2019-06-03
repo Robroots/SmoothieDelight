@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 30px 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.footer__section{
+    width: 30%;
+}
+.footer__section__list{
+    list-style: none;
+}
+.footer__section__list.social{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.footer__section__list__item__link{
+    color: white;
+}
+.footer__section__list__item__img{
+    width: 3em;
+    cursor: pointer;
+}

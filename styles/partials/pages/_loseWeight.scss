@@ -1,0 +1,22 @@
+.fit__img{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.fit__sign{
+    visibility: hidden;
+    font-family: 'Arizonia', cursive;
+    font-weight: bold;
+    font-size: 4.6vw;
+    white-space: pre-line;
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    transform: scale(3) rotate(0deg) ;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.fit__sign--loaded{
+    visibility: visible;
+    transform: scale(1) rotate(300deg);
+}

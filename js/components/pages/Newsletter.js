@@ -53,7 +53,7 @@ class Newsletter extends Component {
             <section className='newsletter page'>
                 <h1 className='page__header'>Sign up for newsletter</h1>
                 <p className='page__text'>
-                    Food Factor is dynamically developing brand and if you liked us and our products - please leave us your email address and keep being informed of all 
+                    Food Factor is dynamically developing brand and if you liked us and our products - please leave us your email address and keep being informed about Smoothie Delight.
                 </p>
                 <form name='newsletter' onSubmit={this.handleSubmit} className='newsletter__form'>
                     <fieldset className='newsletter__form__fieldset'>
